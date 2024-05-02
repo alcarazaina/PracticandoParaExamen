@@ -22,3 +22,5 @@ S
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
 w
 G.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec,8\6\863e0292fd7e9b3e74dafd6cc01f73ba76346482
+l
+<src/main/java/Ejercicios/stream/ejercicio01/Ejercicio01.java,d\4\d48ed76a0b8760329760539025d796f936ed7570
