@@ -24,3 +24,7 @@ w
 G.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec,8\6\863e0292fd7e9b3e74dafd6cc01f73ba76346482
 l
 <src/main/java/Ejercicios/stream/ejercicio01/Ejercicio01.java,d\4\d48ed76a0b8760329760539025d796f936ed7570
+_
+/src/main/java/Ejercicios/ficheros/Ficheros.java,2\0\2050ba5554fc8c7fcb2c227c917250e0096238dd
+Z
+*src/main/java/Ejercicios/ficheros/hola.txt,d\6\d66933cf6378ece6bc2fa0fbf497e55ba29a66f9
