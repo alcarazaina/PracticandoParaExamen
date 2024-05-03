@@ -37,15 +37,21 @@ public class Ficheros {
             System.out.println("¿En que fichero quieres escribir?");
             File fichero = new File(ruta + teclado.nextLine());
             fw = new FileWriter(fichero, true);
-            System.out.println("¿Qué quieres escribir?");
-            fw.write(teclado.nextLine());
+            System.out.println("¿Qué quieres escribir?, escribe terminar para terminar");
+            String linea = teclado.nextLine();
+            while (!linea.equalsIgnoreCase("terminar")){
+
+                fw.write(linea + "\n");
+                linea = teclado.nextLine();
+            }
         } catch (Exception e){
             System.out.println("Error: " + e.getMessage());
         } finally {
             try {
                 fw.close();
+                teclado.close();
             } catch (IOException e) {
-                throw new RuntimeException(e);
+                System.out.println("No se ha podido cerrar correctamente " + e.getMessage());
             }
         }
     }
