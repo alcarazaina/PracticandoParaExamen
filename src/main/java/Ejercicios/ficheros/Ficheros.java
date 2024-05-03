@@ -66,27 +66,39 @@ public class Ficheros {
             System.out.println("Error: " + e.getMessage());
         }
     }
+
+
+    public static void leerFichero(){
+        Scanner lector = null;
+        try {
+            System.out.println("¿Qué fichero quieres leer?");
+            File fichero = new File(ruta + teclado.nextLine());
+            lector = new Scanner(fichero);
+            while (lector.hasNextLine()){
+                System.out.println(lector.nextLine());
+            }
+        }catch (Exception e){
+            System.out.println("Error: " + e.getMessage());
+        } finally {
+            if (lector != null) {
+                lector.close();
+            }
+        }
+    }
     public static void menu(){
-        System.out.println("¿Qué quieres hacer?\n1-Crear un fichero.\n2-Escribir en un fichero.\n3-Borrar un fichero.\n0-Para salir ");
+        System.out.println("¿Qué quieres hacer?\n1-Crear un fichero.\n2-Escribir en un fichero.\n3-Borrar un fichero.\n4-Leer fichero.\n0-Para salir ");
         int numero = teclado.nextInt(); teclado.nextLine();
 
         while (numero != 0) {
 
-            switch (numero){
-                case 1:
-                crearFichero();
-                break;
-                case 2:
-                escribirEnElFichero();
-                break;
-                case 3:
-                eliminarFichero();
-                break;
-                default:
-                System.out.println("Opción incorrecta inténtelo de nuevo");
-                break;
+            switch (numero) {
+                case 1 -> crearFichero();
+                case 2 -> escribirEnElFichero();
+                case 3 -> eliminarFichero();
+                case 4 -> leerFichero();
+                default -> System.out.println("Opción incorrecta inténtelo de nuevo");
             }
-            System.out.println("¿Qué quieres hacer?\n1-Crear un fichero.\n2-Escribir en un fichero.\n3-Borrar un fichero.\n0-Para salir ");
+            System.out.println("¿Qué quieres hacer?\n1-Crear un fichero.\n2-Escribir en un fichero.\n3-Borrar un fichero.\n4-Leer fichero.\n0-Para salir ");
             numero = teclado.nextInt(); teclado.nextLine();
         }
 
