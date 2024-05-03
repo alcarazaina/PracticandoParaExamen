@@ -28,3 +28,13 @@ _
 /src/main/java/Ejercicios/ficheros/Ficheros.java,2\0\2050ba5554fc8c7fcb2c227c917250e0096238dd
 Z
 *src/main/java/Ejercicios/ficheros/hola.txt,d\6\d66933cf6378ece6bc2fa0fbf497e55ba29a66f9
+o
+?src/main/java/Ejercicios/interfaceslambda/ejercicio01/Main.java,a\2\a2c9aa199d51e2cca7f866aaba37727de986af9f
+x
+Hsrc/main/java/Ejercicios/interfaceslambda/ejercicio01/imprimirLista.java,6\e\6e422a622783041d90fa0f41327b09f6014b6e84
+{
+Ksrc/main/java/Ejercicios/interfaceslambda/ejercicio01/contarCaracteres.java,1\0\10defdb0c3aa3ffdb27b64daeefb4b371154735b
+s
+Csrc/main/java/Ejercicios/interfaceslambda/ejercicio01/numMayor.java,7\6\7683bae50149e9e257a3cda6a6b6efa4248bf80e
+x
+Hsrc/main/java/Ejercicios/interfaceslambda/ejercicio01/encontarPares.java,0\f\0f81004daba958eb38102cea06be9e42322091e4
