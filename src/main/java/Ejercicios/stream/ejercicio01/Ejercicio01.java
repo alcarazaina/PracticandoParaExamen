@@ -47,6 +47,8 @@ public class Ejercicio01 {
 
         //Suma todos los elementos de la lista e imprime el resultado.
         System.out.println(numeros.stream().reduce(0, (n, n2) -> n + n2));
+        System.out.println("Otra Forma: ");
+        System.out.println(numeros.stream().mapToInt(numero -> numero).sum());
 
         //Suma todos los elementos mayores o iguales a 5 (también los que se repitan) e imprime el resultado.
         System.out.println(numeros.stream().filter(n -> n >= 5).reduce(0, (n1, n2) -> n1 + n2));

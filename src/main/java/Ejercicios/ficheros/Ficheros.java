@@ -3,7 +3,6 @@ package Ejercicios.ficheros;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Ficheros {
@@ -12,8 +11,7 @@ public class Ficheros {
     static Scanner teclado = new Scanner(System.in);
 
     public static void main(String[] args) {
-        crearFichero();
-        escribirEnElFichero();
+        menu();
     }
 
     public static void crearFichero (){
@@ -49,10 +47,49 @@ public class Ficheros {
         } finally {
             try {
                 fw.close();
-                teclado.close();
             } catch (IOException e) {
                 System.out.println("No se ha podido cerrar correctamente " + e.getMessage());
             }
         }
     }
+
+    public static void eliminarFichero (){
+
+        try {
+            System.out.println("¿Qué fichero quieres eliminar?");
+            File fichero = new File(ruta + teclado.nextLine());
+            boolean eliminado = fichero.delete();
+            if (eliminado){
+                System.out.println("Fichero eliminado correctamente");
+            }
+        }catch (Exception e){
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
+    public static void menu(){
+        System.out.println("¿Qué quieres hacer?\n1-Crear un fichero.\n2-Escribir en un fichero.\n3-Borrar un fichero.\n0-Para salir ");
+        int numero = teclado.nextInt(); teclado.nextLine();
+
+        while (numero != 0) {
+
+            switch (numero){
+                case 1:
+                crearFichero();
+                break;
+                case 2:
+                escribirEnElFichero();
+                break;
+                case 3:
+                eliminarFichero();
+                break;
+                default:
+                System.out.println("Opción incorrecta inténtelo de nuevo");
+                break;
+            }
+            System.out.println("¿Qué quieres hacer?\n1-Crear un fichero.\n2-Escribir en un fichero.\n3-Borrar un fichero.\n0-Para salir ");
+            numero = teclado.nextInt(); teclado.nextLine();
+        }
+
+    }
+
 }
