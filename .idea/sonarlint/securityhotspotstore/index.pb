@@ -26,8 +26,6 @@ l
 <src/main/java/Ejercicios/stream/ejercicio01/Ejercicio01.java,d\4\d48ed76a0b8760329760539025d796f936ed7570
 _
 /src/main/java/Ejercicios/ficheros/Ficheros.java,2\0\2050ba5554fc8c7fcb2c227c917250e0096238dd
-Z
-*src/main/java/Ejercicios/ficheros/hola.txt,d\6\d66933cf6378ece6bc2fa0fbf497e55ba29a66f9
 o
 ?src/main/java/Ejercicios/interfaceslambda/ejercicio01/Main.java,a\2\a2c9aa199d51e2cca7f866aaba37727de986af9f
 x
@@ -38,3 +36,9 @@ s
 Csrc/main/java/Ejercicios/interfaceslambda/ejercicio01/numMayor.java,7\6\7683bae50149e9e257a3cda6a6b6efa4248bf80e
 x
 Hsrc/main/java/Ejercicios/interfaceslambda/ejercicio01/encontarPares.java,0\f\0f81004daba958eb38102cea06be9e42322091e4
+d
+4src/main/java/Ejercicios/directorios/Directorio.java,e\7\e7970622226762ec3f661c56504af11837d9318b
+k
+;src/main/java/Ejercicios/directorios/directorio/fichero.txt,d\1\d175d7c4da26893a21017f7947028793127df794
+^
+.src/main/java/Ejercicios/lambda/Excepcion.java,2\e\2e2ed58aaf23e203d96f27ad592c4356525e8f93
